@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Pessoa from './components/Pessoa';
+import Frase from './components/Frase';
+import List from './components/List';
+import Item from './components/Item';
 
 function App() {
+
+
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Pessoa nome='joao' idade ='32' profissao = 'banqueiro' foto= 'https://via.placeholder.com/150' alt ='foto do usuario' />
+      <div>
+        <Frase />
+      </div>
+
+      <List />
+      <Item />
     </div>
   );
 }
